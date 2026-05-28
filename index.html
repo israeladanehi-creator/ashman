@@ -580,6 +580,84 @@ footer p { font-size: 0.72rem; color: var(--mid); font-family: 'DM Mono', monosp
   .nav-right { gap: 1rem; }
   .nav-right a:not(.nav-chat) { display: none; }
 }
+
+/* ZEST CARD */
+.zest-thumb {
+  background: #0d0d0d;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  align-items: stretch;
+  justify-content: stretch;
+}
+.zest-typo-bg {
+  width: 100%;
+  height: 100%;
+  background: #0d0d0d;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 1.5rem 1.6rem 1.4rem;
+  position: relative;
+  overflow: hidden;
+}
+.zest-typo-bg::before {
+  content: 'ZEST';
+  position: absolute;
+  top: -10px;
+  right: -12px;
+  font-size: 8rem;
+  font-weight: 900;
+  color: rgba(255,107,0,0.07);
+  letter-spacing: -4px;
+  line-height: 1;
+  pointer-events: none;
+  font-family: 'DM Sans', sans-serif;
+}
+.zest-tag {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.6rem;
+  color: #c8ff00;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 0.65rem;
+}
+.zest-headline {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.75rem;
+  font-weight: 900;
+  line-height: 1.0;
+  letter-spacing: -0.04em;
+  margin-bottom: 0.75rem;
+}
+.zest-hl-white { color: #ffffff; }
+.zest-hl-orange { color: #ff6b00; }
+.zest-rule {
+  width: 100%;
+  height: 1.5px;
+  background: #c8ff00;
+  margin-bottom: 0.7rem;
+}
+.zest-chips {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+.zest-chip {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.58rem;
+  color: rgba(255,255,255,0.45);
+  border: 0.5px solid rgba(255,255,255,0.18);
+  border-radius: 4px;
+  padding: 0.2rem 0.45rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.zest-card:hover .zest-typo-bg::before {
+  color: rgba(255,107,0,0.13);
+  transition: color 0.4s ease;
+}
 </style>
 </head>
 <body>
@@ -615,17 +693,27 @@ footer p { font-size: 0.72rem; color: var(--mid); font-family: 'DM Mono', monosp
 
   <!-- 2-col cards -->
   <div class="cards-grid fade d4" id="portfolio">
-    <a class="card" href="#" target="_blank" rel="noopener">
-      <div class="card-thumb orange">
-        <svg width="100" height="100" viewBox="0 0 100 100" fill="none" style="opacity:0.3;">
-          <polygon points="50,8 92,28 92,72 50,92 8,72 8,28" fill="white"/>
-          <polygon points="50,22 78,37 78,63 50,78 22,63 22,37" fill="none" stroke="white" stroke-width="2"/>
-        </svg>
+    <a class="card zest-card" href="https://israeladanehi-creator.github.io/zest/" target="_blank" rel="noopener">
+      <div class="card-thumb zest-thumb">
+        <div class="zest-typo-bg">
+          <div class="zest-tag">&#9679; Case study &mdash; 001</div>
+          <div class="zest-headline">
+            <span class="zest-hl-white">Flavor</span><br>
+            <span class="zest-hl-white">hits </span><span class="zest-hl-orange">different.</span>
+          </div>
+          <div class="zest-rule"></div>
+          <div class="zest-chips">
+            <span class="zest-chip">HTML/CSS</span>
+            <span class="zest-chip">48h turnaround</span>
+            <span class="zest-chip">F&amp;B</span>
+            <span class="zest-chip">Mobile-first</span>
+          </div>
+        </div>
       </div>
       <div class="card-footer">
         <div>
-          <p class="card-name">Placeholder Project</p>
-          <p class="card-category">Restaurant · Food & Beverage</p>
+          <p class="card-name">Zest</p>
+          <p class="card-category">Restaurant · Food & Beverage · Delivered in 48h</p>
         </div>
         <div class="card-arrow">
           <svg viewBox="0 0 16 16"><line x1="3" y1="13" x2="13" y2="3"/><polyline points="6,3 13,3 13,10"/></svg>
@@ -714,7 +802,7 @@ footer p { font-size: 0.72rem; color: var(--mid); font-family: 'DM Mono', monosp
           </li>
           <li class="offer-item">
             <div class="offer-check"><svg viewBox="0 0 10 10"><polyline points="2,5 4.5,7.5 9,2.5"/></svg></div>
-            <div><p class="offer-item-title">Fast Delivery — 5–7 Days</p><p class="offer-item-desc">From brief to live in under a week. You focus on business; we focus on building.</p></div>
+            <div><p class="offer-item-title">Fast Delivery — 48 Hours</p><p class="offer-item-desc">From brief to live in just 48 hours. You focus on business; we focus on building.</p></div>
           </li>
           <li class="offer-item">
             <div class="offer-check"><svg viewBox="0 0 10 10"><polyline points="2,5 4.5,7.5 9,2.5"/></svg></div>
@@ -747,7 +835,7 @@ footer p { font-size: 0.72rem; color: var(--mid); font-family: 'DM Mono', monosp
     <h2 class="sec-headline" style="margin-bottom:2rem;">Straight to results.</h2>
     <div class="why-cards">
       <div class="why-card"><p class="why-card-big">₦150K</p><p class="why-card-title">Transparent pricing</p><p class="why-card-desc">Flat price. No vague quotes, no surprise charges, no retainers.</p></div>
-      <div class="why-card"><p class="why-card-big">7</p><p class="why-card-title">Days to delivery</p><p class="why-card-desc">From first call to live website in under a week.</p></div>
+      <div class="why-card"><p class="why-card-big" style="font-size:2.25rem;">48h</p><p class="why-card-title">Turnaround time</p><p class="why-card-desc">From first call to live website in just 48 hours.</p></div>
       <div class="why-card"><p class="why-card-big">∞</p><p class="why-card-title">Start earning online — now</p><p class="why-card-desc">Every day without a website is a customer lost to your competitor. Not anymore.</p></div>
     </div>
   </section>
@@ -783,7 +871,7 @@ footer p { font-size: 0.72rem; color: var(--mid); font-family: 'DM Mono', monosp
       <div class="contact-detail-item"><p class="contact-detail-label">WhatsApp</p><p class="contact-detail-value">+234 701 189 2504</p></div>
       <div class="contact-detail-item"><p class="contact-detail-label">Email</p><p class="contact-detail-value">adanehiasher@gmail.com</p></div>
       <div class="contact-detail-item"><p class="contact-detail-label">Service</p><p class="contact-detail-value">Single-page websites from ₦150,000</p></div>
-      <div class="contact-detail-item"><p class="contact-detail-label">Turnaround</p><p class="contact-detail-value">5–7 Business Days</p></div>
+      <div class="contact-detail-item"><p class="contact-detail-label">Turnaround</p><p class="contact-detail-value">48 Hours</p></div>
       <div class="contact-detail-item"><p class="contact-detail-label">Location</p><p class="contact-detail-value">Nigeria — serving businesses nationwide</p></div>
     </div>
 
