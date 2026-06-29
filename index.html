@@ -7,8 +7,6 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iNiIgZmlsbD0iI0Y5NzMxNiIvPjx0ZXh0IHg9IjE2IiB5PSIyMyIgZm9udC1mYW1pbHk9IkRNIFNhbnMsQXJpYWwsc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyMCIgZm9udC13ZWlnaHQ9IjkwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzBkMGQwZCI+QTwvdGV4dD48L3N2Zz4=" />
-<link rel="shortcut icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iNiIgZmlsbD0iI0Y5NzMxNiIvPjx0ZXh0IHg9IjE2IiB5PSIyMyIgZm9udC1mYW1pbHk9IkRNIFNhbnMsQXJpYWwsc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyMCIgZm9udC13ZWlnaHQ9IjkwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzBkMGQwZCI+QTwvdGV4dD48L3N2Zz4=" />
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -582,84 +580,6 @@ footer p { font-size: 0.72rem; color: var(--mid); font-family: 'DM Mono', monosp
   .nav-right { gap: 1rem; }
   .nav-right a:not(.nav-chat) { display: none; }
 }
-
-/* ZEST CARD */
-.zest-thumb {
-  background: #0d0d0d;
-  padding: 0;
-  overflow: hidden;
-  position: relative;
-  align-items: stretch;
-  justify-content: stretch;
-}
-.zest-typo-bg {
-  width: 100%;
-  height: 100%;
-  background: #0d0d0d;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-end;
-  padding: 1.5rem 1.6rem 1.4rem;
-  position: relative;
-  overflow: hidden;
-}
-.zest-typo-bg::before {
-  content: 'ZEST';
-  position: absolute;
-  top: -10px;
-  right: -12px;
-  font-size: 8rem;
-  font-weight: 900;
-  color: rgba(255,107,0,0.07);
-  letter-spacing: -4px;
-  line-height: 1;
-  pointer-events: none;
-  font-family: 'DM Sans', sans-serif;
-}
-.zest-tag {
-  font-family: 'DM Mono', monospace;
-  font-size: 0.6rem;
-  color: #c8ff00;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  margin-bottom: 0.65rem;
-}
-.zest-headline {
-  font-family: 'DM Sans', sans-serif;
-  font-size: 1.75rem;
-  font-weight: 900;
-  line-height: 1.0;
-  letter-spacing: -0.04em;
-  margin-bottom: 0.75rem;
-}
-.zest-hl-white { color: #ffffff; }
-.zest-hl-orange { color: #ff6b00; }
-.zest-rule {
-  width: 100%;
-  height: 1.5px;
-  background: #c8ff00;
-  margin-bottom: 0.7rem;
-}
-.zest-chips {
-  display: flex;
-  gap: 0.4rem;
-  flex-wrap: wrap;
-}
-.zest-chip {
-  font-family: 'DM Mono', monospace;
-  font-size: 0.58rem;
-  color: rgba(255,255,255,0.45);
-  border: 0.5px solid rgba(255,255,255,0.18);
-  border-radius: 4px;
-  padding: 0.2rem 0.45rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-.zest-card:hover .zest-typo-bg::before {
-  color: rgba(255,107,0,0.13);
-  transition: color 0.4s ease;
-}
 </style>
 </head>
 <body>
@@ -695,27 +615,26 @@ footer p { font-size: 0.72rem; color: var(--mid); font-family: 'DM Mono', monosp
 
   <!-- 2-col cards -->
   <div class="cards-grid fade d4" id="portfolio">
-    <a class="card zest-card" href="https://israeladanehi-creator.github.io/zest/" target="_blank" rel="noopener">
-      <div class="card-thumb zest-thumb">
-        <div class="zest-typo-bg">
-          <div class="zest-tag">&#9679; Case study &mdash; 001</div>
-          <div class="zest-headline">
-            <span class="zest-hl-white">Flavor</span><br>
-            <span class="zest-hl-white">hits </span><span class="zest-hl-orange">different.</span>
-          </div>
-          <div class="zest-rule"></div>
-          <div class="zest-chips">
-            <span class="zest-chip">HTML/CSS</span>
-            <span class="zest-chip">48h turnaround</span>
-            <span class="zest-chip">F&amp;B</span>
-            <span class="zest-chip">Mobile-first</span>
-          </div>
-        </div>
+    <a class="card" href="https://queenspleasure.com.ng" target="_blank" rel="noopener">
+      <div class="card-thumb" style="background: linear-gradient(145deg, #1a6b4a 0%, #0d4a31 60%, #0a3522 100%); position:relative; overflow:hidden;">
+        <!-- Subtle world map / travel pattern -->
+        <svg width="140" height="140" viewBox="0 0 140 140" fill="none" style="opacity:0.18; position:absolute;">
+          <!-- Globe circles -->
+          <circle cx="70" cy="70" r="60" stroke="white" stroke-width="1.5"/>
+          <ellipse cx="70" cy="70" rx="30" ry="60" stroke="white" stroke-width="1"/>
+          <ellipse cx="70" cy="70" rx="60" ry="25" stroke="white" stroke-width="1"/>
+          <line x1="10" y1="70" x2="130" y2="70" stroke="white" stroke-width="1"/>
+          <line x1="70" y1="10" x2="70" y2="130" stroke="white" stroke-width="1"/>
+        </svg>
+        <!-- Plane icon -->
+        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" style="position:relative; z-index:1; opacity:0.85;">
+          <path d="M56 24L40 32L24 8L16 12L28 36L12 44L8 40L4 42L10 54L22 56L24 52L28 48L52 56L56 48L36 32L48 16L56 24Z" fill="white"/>
+        </svg>
       </div>
       <div class="card-footer">
         <div>
-          <p class="card-name">Zest</p>
-          <p class="card-category">Restaurant · Food & Beverage · Delivered in 48h</p>
+          <p class="card-name">Queens Pleasure Enterprise</p>
+          <p class="card-category">Travel & Tour Agency · Africa</p>
         </div>
         <div class="card-arrow">
           <svg viewBox="0 0 16 16"><line x1="3" y1="13" x2="13" y2="3"/><polyline points="6,3 13,3 13,10"/></svg>
@@ -785,7 +704,7 @@ footer p { font-size: 0.72rem; color: var(--mid); font-family: 'DM Mono', monosp
         <div style="display:block; margin-bottom:0.75rem;">
           <div class="price-pill-wrap">
             <div class="price-pill">
-              <span class="price-pill-label">From</span>₦150,000
+              <span class="price-pill-label">From</span>₦300,000
             </div>
             <span class="price-ribbon">🔥 Best value</span>
           </div>
@@ -804,7 +723,7 @@ footer p { font-size: 0.72rem; color: var(--mid); font-family: 'DM Mono', monosp
           </li>
           <li class="offer-item">
             <div class="offer-check"><svg viewBox="0 0 10 10"><polyline points="2,5 4.5,7.5 9,2.5"/></svg></div>
-            <div><p class="offer-item-title">Fast Delivery — 48 Hours</p><p class="offer-item-desc">From brief to live in just 48 hours. You focus on business; we focus on building.</p></div>
+            <div><p class="offer-item-title">Fast Delivery — 5–7 Days</p><p class="offer-item-desc">From brief to live in under a week. You focus on business; we focus on building.</p></div>
           </li>
           <li class="offer-item">
             <div class="offer-check"><svg viewBox="0 0 10 10"><polyline points="2,5 4.5,7.5 9,2.5"/></svg></div>
@@ -836,8 +755,8 @@ footer p { font-size: 0.72rem; color: var(--mid); font-family: 'DM Mono', monosp
     <p class="eyebrow">Why ASHMAN</p>
     <h2 class="sec-headline" style="margin-bottom:2rem;">Straight to results.</h2>
     <div class="why-cards">
-      <div class="why-card"><p class="why-card-big">₦150K</p><p class="why-card-title">Transparent pricing</p><p class="why-card-desc">Flat price. No vague quotes, no surprise charges, no retainers.</p></div>
-      <div class="why-card"><p class="why-card-big" style="font-size:2.25rem;">48h</p><p class="why-card-title">Turnaround time</p><p class="why-card-desc">From first call to live website in just 48 hours.</p></div>
+      <div class="why-card"><p class="why-card-big">₦300K</p><p class="why-card-title">Transparent pricing</p><p class="why-card-desc">Flat price. No vague quotes, no surprise charges, no retainers.</p></div>
+      <div class="why-card"><p class="why-card-big">7</p><p class="why-card-title">Days to delivery</p><p class="why-card-desc">From first call to live website in under a week.</p></div>
       <div class="why-card"><p class="why-card-big">∞</p><p class="why-card-title">Start earning online — now</p><p class="why-card-desc">Every day without a website is a customer lost to your competitor. Not anymore.</p></div>
     </div>
   </section>
@@ -853,8 +772,8 @@ footer p { font-size: 0.72rem; color: var(--mid); font-family: 'DM Mono', monosp
 
   <footer>
     <a href="#" class="footer-logo" onclick="showHome(event)">ASHMAN</a>
-    <p>© 2026 ASHMAN. All rights reserved.</p>
-    <p>inquiries@ashman.com.ng</p>
+    <p>© 2025 ASHMAN. All rights reserved.</p>
+    <p>adanehiasher@gmail.com</p>
   </footer>
 
 </div>
@@ -871,9 +790,9 @@ footer p { font-size: 0.72rem; color: var(--mid); font-family: 'DM Mono', monosp
   <div class="contact-grid">
     <div class="contact-info">
       <div class="contact-detail-item"><p class="contact-detail-label">WhatsApp</p><p class="contact-detail-value">+234 701 189 2504</p></div>
-      <div class="contact-detail-item"><p class="contact-detail-label">Email</p><p class="contact-detail-value">inquiries@ashman.com.ng</p></div>
-      <div class="contact-detail-item"><p class="contact-detail-label">Service</p><p class="contact-detail-value">Single-page websites from ₦150,000</p></div>
-      <div class="contact-detail-item"><p class="contact-detail-label">Turnaround</p><p class="contact-detail-value">48 Hours</p></div>
+      <div class="contact-detail-item"><p class="contact-detail-label">Email</p><p class="contact-detail-value">adanehiasher@gmail.com</p></div>
+      <div class="contact-detail-item"><p class="contact-detail-label">Service</p><p class="contact-detail-value">Single-page websites from ₦300,000</p></div>
+      <div class="contact-detail-item"><p class="contact-detail-label">Turnaround</p><p class="contact-detail-value">5–7 Business Days</p></div>
       <div class="contact-detail-item"><p class="contact-detail-label">Location</p><p class="contact-detail-value">Nigeria — serving businesses nationwide</p></div>
     </div>
 
